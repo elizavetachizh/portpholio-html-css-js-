@@ -1,0 +1,49 @@
+//compress: true
+
+@import "vars.less";
+html {
+  font-size: 15px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  margin: 0px;
+  color: @black;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0 0 1rem;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Slick */
+@import "slick/slick.less";
+
+/*Block*/
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/intro.less";
+@import "blocks/social.less";
+@import "blocks/worksLink.less";
+@import "blocks/worksPhoto.less";
+@import "blocks/inform.less";
+@import "blocks/reviews.less";
+@import "blocks/news.less";
+@import "blocks/footer.less";
+@import "blocks/models.less";
+@import "blocks/labelInput.less";

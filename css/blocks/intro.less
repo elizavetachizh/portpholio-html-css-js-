@@ -1,0 +1,76 @@
+// main: ../style.less
+
+.intro {
+  padding-top: 70px;
+  // @media @mobile {
+  //   padding-top: 30px;
+  // }
+}
+.intro__inner {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 120px;
+  background: url("../img/symbols.png") right no-repeat;
+
+  @media @media-mobile {
+    background: url("../img/symbols.png") center no-repeat;
+    justify-content: center;
+  }
+}
+
+.intro__content {
+  width: 50%;
+  @media @media-mobile {
+    justify-content: center;
+    text-align: center;
+    right: 50px;
+    left: auto;
+  }
+}
+
+.intro__photo {
+  position: absolute;
+  bottom: 0;
+  right: 90px;
+  z-index: 1;
+
+  // @media @mobile {
+  //   width: 250px;
+  //   margin-right: 100px;
+  //   // padding-top: 20px;
+  //   padding-bottom: 26px;
+  // }
+  @media @media-mobilthree {
+    display: none;
+  }
+}
+.photo__chel {
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  // @media @media-mobile {
+  //   width: 370px;
+  //   margin-left: 10px;
+  //   margin-bottom: 200px;
+
+  @media @media-mobile {
+    display: none;
+  }
+}
+.intro__subtitle {
+  font-size: 20px;
+}
+.intro__title {
+  margin-top: 5px;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.btn {
+  @media @media-mobilthree {
+    font-size: 1rem;
+    padding: 1em 1.5em;
+    min-width: 140px;
+  }
+}

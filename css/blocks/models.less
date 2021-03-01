@@ -1,0 +1,294 @@
+// main: ../style.less
+.models {
+  display: none;
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: auto;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.models.show {
+  display: flex;
+}
+
+.model__dialog {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+}
+
+.model__dialog--sm {
+  max-width: 980px;
+}
+
+.model__button {
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  z-index: 1;
+  transition: transform 0.2s linear;
+}
+.model-work {
+  display: flex;
+}
+.model-work__photo {
+  width: 65%;
+  position: relative;
+  overflow: hidden;
+}
+.photo__model-work {
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate3d(-50%, -50%, 0);
+}
+.model-work__text {
+  width: 35%;
+  padding: 3.4rem 6.6rem 1rem 1.73rem;
+  position: relative;
+}
+.model-work__tittle {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.model-work__subtittle {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 16px;
+  margin: 0px 0px 30px 0px;
+}
+.client__name {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: fade(@black, 70%);
+}
+.client__infa {
+  color: fade(@black, 70%);
+  font-size: 12px;
+  margin-bottom: 70px;
+  line-height: 2;
+
+  font-weight: 300;
+}
+
+.model__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 30px 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.model__work-btn {
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  text-transform: uppercase;
+}
+
+.model__content {
+  padding: 5rem 1rem;
+}
+.model__title {
+  margin-bottom: 3.6rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
+  font-weight: 700;
+  text-align: center;
+}
+
+.model__button-dop {
+  text-align: center;
+}
+
+.model__btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 18px;
+  line-height: 1;
+  border-radius: 30px;
+  margin: 8px 10px;
+  font-family: inherit;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #524f4e;
+  border: 1px solid @gray;
+  background: white;
+  // box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.model__btn:hover {
+  background: @gray;
+  // box-shadow: 0 15px 20px rgba(black, black, black, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+.print {
+  padding: 10px 52px;
+  line-height: 1;
+  border-radius: 30px;
+  margin: 8px 10px;
+}
+
+.model__razdelenie {
+  display: flex;
+  margin: 4.2rem auto;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+
+  .model__razdelenie:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: @black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+  }
+}
+.model__experience,
+.model__education {
+  // display: flex;
+  width: 50%;
+}
+.model__experience {
+  text-align: right;
+  padding-right: 3.2rem;
+}
+
+.model__experience-text {
+  margin-bottom: 30px;
+}
+.model__education {
+  padding-left: 3.2rem;
+}
+
+.model__education-1 {
+  margin-bottom: 30px;
+}
+
+.model__title-exp {
+  margin-bottom: 2.6rem;
+  font-size: 1.2rem;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.model__title-educ,
+.model__title-ski,
+.model__title-awar {
+  margin-bottom: 2.6rem;
+  font-size: 1.2rem;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.model__time {
+  display: block;
+  margin-bottom: 0.8rem;
+  text-decoration: underline;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-weight: lighter;
+}
+.model__dolgnost {
+  margin-bottom: 0.2rem;
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: 600;
+}
+.model__dolgnost1 {
+  margin-bottom: 8px;
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: 500;
+}
+
+.model__text-infa {
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #6a696b;
+  font-weight: 300;
+}
+
+.model__dopdolgnost {
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-style: italic;
+  font-weight: lighter;
+}
+.model__sckills {
+  margin-top: 50px;
+}
+
+.model__awards {
+  margin-top: 50px;
+}
+.modelbtn {
+  text-align: center;
+}
+.modelbtn1 {
+  padding: 15px 40px;
+}
+.contact {
+  display: flex;
+}
+.contact__left {
+  width: 45%;
+  padding: 20px;
+}
+.contact__right {
+  width: 55%;
+  background: url(https://placehold.it/480x700) center no-repeat;
+}
+.img__right {
+  width: 500px;
+  height: auto;
+  right: auto;
+  left: auto;
+}
+.contact__subtitle {
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+}
+.model__title-let {
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.right__btn {
+  text-align: right;
+  margin-top: 60px;
+}
+.btn-form {
+  padding: 10px 40px;
+}

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="no-scroll">
+    <!-- 
+
+
+
+     -->
+    <header class="header" id="sl">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <div class="header__avatar">
+              <img class="avatar" src="https://placehold.it/57/333" alt="" />
+            </div>
+            <div class="header__content">
+              <div class="header__logo1">
+                Lewis <br />
+                Nathaniel
+              </div>
+              <div class="header__logo2">UI & UX Designer</div>
+            </div>
+          </div>
+          <nav class="nav" id="nav">
+            <a class="nav__link" href="#">work</a>
+            <a class="nav__link" href="#">abou me</a>
+            <a class="nav__link" href="#">blog</a>
+            <a class="nav__link" href="#">contact</a>
+            <a class="nav__link--btn" href="#" data-model="#hire_me">hire me</a>
+          </nav>
+        </div>
+      </div>
+      <button class="burger" type="button" id="navToggle">
+        <span class="burger__item">
+         Menu <!--Прописываем какое-либо слово , что бы элемент не оставался пустым-->
+        </span>
+      </button>
+    </header>
+
+    <section class="intro" id="sl">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <div class="intro__subtitle">Hello, I'm</div>
+            <h1 class="intro__title">Lewis Nathaniel</h1>
+            <div class="intro__text">UI & UK Designer</div>
+
+            <div class="intro__social">
+              <a class="intro__links">
+                <img class="links__img" src="img/facebook.svg" alt="" />
+              </a>
+              <a class="intro__links">
+                <img class="links__img" src="img/behance.svg" alt="" />
+              </a>
+              <a class="intro__links">
+                <img class="links__img" src="img/instagram.svg" alt="" />
+              </a>
+              <a class="intro__links">
+                <img class="links__img" src="img/twitter.svg" alt="" />
+              </a>
+            </div>
+
+            <a class="btn" href="#" type="button" data-model="#hire_me"
+              >HIRE ME</a
+            >
+            <button class="btn" href="#" data-model="#resume_me">
+              SEE MY RESUME
+            </button>
+          </div>
+
+          <div class="intro__photo">
+            <img class="photo__chel" src="img/photo.png" alt="" />
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+    <div class="works">
+      <div class="container">
+        <nav class="works__nav">
+          <a class="works__nav-link" href="" data-filter="all">All</a>
+          <a class="works__nav-link" href="" data-filter="app">App</a>
+          <a class="works__nav-link" href="" data-filter="websites">Websites</a>
+          <a class="works__nav-link" href="" data-filter="interaction"
+            >Interaction</a
+          >
+        </nav>
+
+        <div class="works__inner">
+          <div class="works__photo" data-cat="app">
+            <!--cat-категория-->
+            <div class="work__ramka" data-model="#work_me">
+              <img
+                class="work__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="work__text">
+                <p class="work__tittle">Category: App</p>
+                <h4 class="work__subtittle">project tittle 2020</h4>
+              </div>
+            </div>
+          </div>
+          <div class="works__photo" data-cat="websites">
+            <div class="work__ramka" data-model="#work_me">
+              <img
+                class="work__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="work__text">
+                <p class="work__tittle">Category: Websites</p>
+                <h4 class="work__subtittle">project tittle 2020</h4>
+              </div>
+            </div>
+          </div>
+          <div class="works__photo" data-cat="interaction">
+            <div class="work__ramka" data-model="#work_me1">
+              <img
+                class="work__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="work__text">
+                <p class="work__tittle">Category: Interaction</p>
+                <h4 class="work__subtittle">project tittle 2020</h4>
+              </div>
+            </div>
+          </div>
+          <div class="works__photo" data-cat="app">
+            <div class="work__ramka" data-model="#work_me1">
+              <img
+                class="work__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="work__text">
+                <p class="work__tittle">Category: App</p>
+                <h4 class="work__subtittle">project tittle 2020</h4>
+              </div>
+            </div>
+          </div>
+          <div class="works__photo" data-cat="interaction">
+            <div class="work__ramka" data-model="#work_me">
+              <img
+                class="work__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="work__text">
+                <p class="work__tittle">Category: Interaction</p>
+                <h4 class="work__subtittle">project tittle 2020</h4>
+              </div>
+            </div>
+          </div>
+          <div class="works__photo" data-cat="websites">
+            <div class="work__ramka" data-model="#work_me">
+              <img
+                class="work__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="work__text">
+                <p class="work__tittle">Category: Websites</p>
+                <h4 class="work__subtittle">project tittle 2020</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work__btn">
+          <a class="btn btn--sm" href="#" data-model="#work_me"
+            >load more work</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="informMe">
+      <div class="container">
+        <div class="inform__intro">
+          <div class="inform__photo">
+            <img class="img" src="img/designer_photo.png" alt="" />
+          </div>
+          <div class="inform__content">
+            <h2 class="inform__subtitle">about me</h2>
+            <h1 class="inform__tittle">who am i</h1>
+            <p class="inform__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+              vel quaerat fugit fugiat ea a sapiente eveniet alias consequatur!
+              Hic blanditiis et illum deserunt possimus maxime temporibus
+              deleniti atque. Doloremque.
+            </p>
+            <p class="inform__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab id
+              commodi nesciunt voluptas omnis amet molestiae optio dolorum
+              perspiciatis ratione, modi animi nihil molestias quis, suscipit
+              officia a. Necessitatibus, itaque.
+            </p>
+            <p class="inform__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              dolores, officiis quo veniam sequi explicabo facere eum beatae
+              repellat temporibus pariatur amet, blanditiis architecto, tempore
+              culpa quas. Optio, voluptatem ut!
+            </p>
+            <a class="btn" href="#" data-model="#hire_me">HIRE ME</a>
+            <button class="btn" href="#" data-model="#resume_me">
+              SEE MY RESUME
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <div class="container">
+        <div class="reviews__item">
+          <div class="reviews__text">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+              recusandae labore quibusdam nostrum tempore amet voluptas quasi
+              magni tempora suscipit consectetur pariatur eveniet qui, quo
+              minima praesentium? Quis, a necessitatibus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis labore voluptas quas excepturi numquam ullam rerum
+              vitae iure expedita sed totam, alias, suscipit explicabo dolorem,
+              magnam sequi ut officiis veniam.
+            </p>
+          </div>
+          <div class="reviews__auto">
+            <img
+              class="reviews__avatar"
+              src="https://placehold.it/57/333"
+              alt=""
+            />
+            <div class="reviews__name">Edward M. Brooks</div>
+            <div class="reviews__company">Marketing House</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="container">
+        <div class="news__header">
+          <div class="news__title">read me</div>
+          <div class="news__subtitle">Sometimes i write something smart</div>
+        </div>
+
+        <div class="news__inner">
+          <div class="news__col">
+            <div class="news__ramka">
+              <img
+                class="news__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="news__content">
+                <a class="news__inform" href="">TEN THE BEST APP IN 2017</a>
+                <p class="news__tittle">category</p>
+                <p class="news__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates maiores illo deserunt facere corporis, architecto
+                  cumque, at vel consectetur, necessitatibus molestiae nostrum
+                  quae cupiditate minima? Provident cumque aperiam similique
+                  tempore?
+                </p>
+              </div>
+              <div class="news__btn">
+                <a class="btn btn--sm" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__col">
+            <div class="news__ramka">
+              <img
+                class="news__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="news__content">
+                <a class="news__inform" href="">TEN THE BEST APP IN 2017</a>
+                <p class="news__tittle">category</p>
+                <p class="news__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates maiores illo deserunt facere corporis, architecto
+                  cumque, at vel consectetur, necessitatibus molestiae nostrum
+                  quae cupiditate minima? Provident cumque aperiam similique
+                  tempore?
+                </p>
+              </div>
+              <div class="news__btn">
+                <a class="btn btn--sm" href="">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__col">
+            <div class="news__ramka">
+              <img
+                class="news__img"
+                src="https://placehold.it/370x300"
+                alt=""
+              />
+              <div class="news__content">
+                <a class="news__inform" href="">TEN THE BEST APP IN 2017</a>
+                <p class="news__tittle">category</p>
+                <p class="news__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates maiores illo deserunt facere corporis, architecto
+                  cumque, at vel consectetur, necessitatibus molestiae nostrum
+                  quae cupiditate minima? Provident cumque aperiam similique
+                  tempore?
+                </p>
+              </div>
+              <div class="news__btn">
+                <a class="btn btn--sm" href="">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news__footer">
+          <a class="news__link" href="">See more posts</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__iner">
+          <div class="footer__crears">
+            <div class="footer__tittle">© 2018 UI43 - Free Templates</div>
+            <div class="footer__links">
+              <a>
+                <img src="img/facebook.svg" alt="" width="24" />
+              </a>
+              <a>
+                <img src="img/behance.svg" alt="" width="24" />
+              </a>
+              <a>
+                <img src="img/instagram.svg" alt="" width="24" />
+              </a>
+              <a>
+                <img src="img/twitter.svg" alt="" width="24" />
+              </a>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <a class="footer__nav-link" href="#">work</a>
+            <a class="footer__nav-link" href="#">abou me</a>
+            <a class="footer__nav-link" href="#">blog</a>
+            <a class="footer__nav-link" href="#">contact</a>
+            <a
+              class="footer__nav-link footer__nav-link--btn"
+              href="#"
+              data-model="#hire_me"
+              >hire me</a
+            >
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <div class="models" id="work_me">
+      <div class="model__dialog">
+        <button class="model__button" type="button" data-close="#work_me">
+          <img src="img/letter-x.svg" alt="" width="20" />
+        </button>
+
+        <div class="model-work">
+          <div class="model-work__photo">
+            <div id="workSlider">
+              <div>
+                <img
+                  class="photo__model-work"
+                  src="https://placehold.it/370x300"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="photo__model-work"
+                  src="https://placehold.it/370x300/333"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="model-work__text">
+            <h1 class="model-work__tittle">project title</h1>
+            <h2 class="model-work__subtittle">category | 2021</h2>
+            <div class="model-work__client">
+              <h4 class="client__nazvanie">Client:</h4>
+              <h3 class="client__name">Elizaveta Chizh</h3>
+              <p class="client__infa">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                omnis culpa dicta voluptates natus vero suscipit magni,
+                provident eaque ducimus hic, fuga, nisi animi libero quas fugit
+                aliquid qui perspiciatis!
+              </p>
+              <p class="client__infa">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                temporibus impedit? Quisquam numquam totam architecto voluptates
+                tempora eos, ipsa reiciendis illum commodi, et velit soluta
+                aliquid repellendus voluptatibus aut similique!
+              </p>
+            </div>
+            <div class="model__footer">
+              <div class="model__work-btn slickPrev">previous</div>
+              <div class="model__work-btn slickNext">next</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="models" id="work_me1">
+      <div class="model__dialog">
+        <button class="model__button" type="button" data-close="#work_me">
+          <img src="img/letter-x.svg" alt="" width="20" />
+        </button>
+
+        <div class="model-work">
+          <div class="model-work__photo">
+            <div id="workSlider">
+              <div>
+                <img
+                  class="photo__model-work"
+                  src="https://placehold.it/370x300"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="photo__model-work"
+                  src="https://placehold.it/370x300/333"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="model-work__text">
+            <h1 class="model-work__tittle">project title 2</h1>
+            <h2 class="model-work__subtittle">category | 2021</h2>
+            <div class="model-work__client">
+              <h4 class="client__nazvanie">Client:</h4>
+              <h3 class="client__name">Elizaveta Chizh</h3>
+              <p class="client__infa">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                omnis culpa dicta voluptates natus vero suscipit magni,
+                provident eaque ducimus hic, fuga, nisi animi libero quas fugit
+                aliquid qui perspiciatis!
+              </p>
+              <p class="client__infa">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                temporibus impedit? Quisquam numquam totam architecto voluptates
+                tempora eos, ipsa reiciendis illum commodi, et velit soluta
+                aliquid repellendus voluptatibus aut similique!
+              </p>
+            </div>
+            <div class="model__footer">
+              <div class="model__work-btn slickPrev">previous</div>
+              <div class="model__work-btn slickNext">next</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+
+
+
+      
+     -->
+    <div class="models" id="resume_me">
+      <div class="model__dialog">
+        <button class="model__button" type="button" data-close="#resume_me">
+          <img src="img/letter-x.svg" alt="" width="20" />
+        </button>
+        <div class="model__content">
+          <div class="model__title">resume</div>
+          <div class="model__button-dop">
+            <button class="model__btn download">download pdf</button>
+            <button class="model__btn print">print</button>
+          </div>
+
+          <div class="model__razdelenie">
+            <div class="model__experience">
+              <h1 class="model__title-exp">experience</h1>
+              <div class="model__experience-text">
+                <h3 class="model__time">2017 - Present</h3>
+                <h2 class="model__dolgnost">Freelancer</h2>
+                <h2 class="model__dopdolgnost">Art Director</h2>
+                <p class="model__text-infa">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium expedita eaque voluptate mollitia, atque eveniet
+                  quia ullam placeat sunt necessitatibus, amet, debitis voluptas
+                  voluptatum unde pariatur? Modi facere blanditiis rerum.
+                </p>
+              </div>
+              <div class="model__experience-text">
+                <h3 class="model__time">2017 - Present</h3>
+                <h2 class="model__dolgnost">Freelancer</h2>
+                <h2 class="model__dopdolgnost">Art Director</h2>
+                <p class="model__text-infa">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium expedita eaque voluptate mollitia, atque eveniet
+                  quia ullam placeat sunt necessitatibus, amet, debitis voluptas
+                  voluptatum unde pariatur? Modi facere blanditiis rerum.
+                </p>
+              </div>
+              <div class="model__experience-text">
+                <h3 class="model__time">2017 - Present</h3>
+                <h2 class="model__dolgnost">Freelancer</h2>
+                <h2 class="model__dopdolgnost">Art Director</h2>
+                <p class="model__text-infa">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium expedita eaque voluptate mollitia, atque eveniet
+                  quia ullam placeat sunt necessitatibus, amet, debitis voluptas
+                  voluptatum unde pariatur? Modi facere blanditiis rerum.
+                </p>
+              </div>
+            </div>
+            <div class="model__education">
+              <h1 class="model__title-educ">education</h1>
+              <div class="model__education-1">
+                <h3 class="model__time">2005 - 2010</h3>
+                <h2 class="model__dolgnost">UI/UX Design</h2>
+                <h2 class="model__dopdolgnost">LA University, USA</h2>
+              </div>
+              <div class="model__education-1">
+                <h3 class="model__time">2005 - 2010</h3>
+                <h2 class="model__dolgnost">UI/UX Design</h2>
+                <h2 class="model__dopdolgnost">LA University, USA</h2>
+              </div>
+              <div class="model__sckills">
+                <h4 class="model__title-ski">SKILLS</h4>
+                <h5 class="model__dolgnost1">UI/UX Design</h5>
+                <h5 class="model__dolgnost1">UI/UX Design</h5>
+                <h5 class="model__dolgnost1">UI/UX Design</h5>
+              </div>
+              <div class="model__awards">
+                <h4 class="model__title-awar">awards</h4>
+                <h3 class="model__time">2005 - 2010</h3>
+                <h5 class="model__dolgnost">UI/UX Design</h5>
+                <h2 class="model__dopdolgnost">LA University, USA</h2>
+                <p class="model__text-infa">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                  officia nulla voluptatem natus, dolores minima amet quam
+                  debitis exercitationem vero enim necessitatibus ipsam repellat
+                  facere vel libero assumenda nisi temporibus?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modelbtn">
+            <button class="btn modelbtn1">hire me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="models" id="hire_me">
+      <div class="model__dialog model__dialog--sm">
+        <button class="model__button" type="button" data-close="#hire_me">
+          <img src="img/letter-x.svg" alt="" width="20" />
+        </button>
+        <div class="model__content">
+          <div class="contact">
+            <div class="contact__left">
+              <div class="model__title model__title-let">let's talk</div>
+              <div class="contact__subtitle">call me or send me a request</div>
+              <ul class="contact__info">
+                <li class="contact__info-item">
+                  <img
+                    class="contact__info-icon"
+                    src="/img/telephone.svg"
+                    alt=""
+                    width="25px"
+                  />
+                  (200) 100 3000
+                </li>
+                <li class="contact__info-item">
+                  <img
+                    class="contact__info-icon"
+                    src="/img/email.svg"
+                    alt=""
+                    width="25px"
+                  />
+                  elizavetka.chizh@gmail.com
+                </li>
+              </ul>
+              <form action="/" method="POST">
+                <label class="label" for="input-email">Adress e-mail</label>
+                <input
+                  class="input"
+                  type="text"
+                  id="input-email"
+                  placeholder="Adress e-mail"
+                />
+              </form>
+
+              <form action="/" method="POST">
+                <label class="label" for="input-text">Request</label>
+                <textarea
+                  class="textarea"
+                  name="input-text"
+                  id="input-text"
+                  placeholder="Type your request..."
+                ></textarea>
+              </form>
+              <div class="right__btn">
+                <button class="btn btn-form">send</button>
+              </div>
+            </div>
+            <div class="contact__right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/slick.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.intro__social {
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+.intro__links {
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+}
+.links__img {
+  width: 40px;
+  text-decoration: none;
+  transition: transform 0.2s linear; //изменения передаются transform со временем 0.2с и линейно
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// .btn {
+//   display: inline-block;
+//   vertical-align: top;
+//   font-size: 16px;
+//   color: @black;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   padding: 10px 15px;
+//   border-radius: 50px;
+//   cursor: pointer;
+//   font-family: inherit;
+//   line-height: 1.1;
+//   border: 2px solid @gray;
+//   transition: background-color 0.2s linear, color 0.2s linear;
+//   &:focus {
+//     background-color: @white;
+//     color: @black;
+//   }
+// }
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 17px 22px;
+  line-height: 1;
+  border-radius: 30px;
+  margin: 8px 10px;
+  font-family: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #524f4e;
+  border: 1px solid @gray;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.btn:hover {
+  background: @black;
+  box-shadow: 0 15px 20px rgba(black, black, black, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
